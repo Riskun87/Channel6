@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Channel6.Domain.Entities.Article>
+@{
+    ViewBag.Title = "Index";
+    var username = User.Identity.Name;
+}
+
+<h2>Articles</h2>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+            <p>@Html.DisplayFor(modelItem => item.Summary)</p>
+        </li>
+    }
+</ul>

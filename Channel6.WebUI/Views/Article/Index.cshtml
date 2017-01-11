@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Channel6.Domain.Entities.Article>
+﻿@model Channel6.WebUI.Models.ArticleListViewModel
 @{
     ViewBag.Title = "Index";
     var username = User.Identity.Name;
@@ -7,11 +7,11 @@
 <h2>Articles</h2>
 
 <ul>
-    @foreach (var item in Model)
+    @foreach (var item in Model.Articles)
     {
         <li>
-            <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
-            <p>@Html.DisplayFor(modelItem => item.Summary)</p>
+            <a href="@Url.Action("Show","Article")/@item.ArticleId"><h3>@item.Title</h3></a>
+            <p>@item.Summary</p>
         </li>
     }
 </ul>

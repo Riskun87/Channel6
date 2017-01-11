@@ -20,19 +20,25 @@ namespace Channel6.WebUI.Controllers
         public ActionResult Index()
         {
             //return View(RSS.Read("http://www.alexandracooks.com/feed/"));
-            return View();
+
+            var articles = Using<GetArticleList>()
+                .Execute();
+
+            var model = new ArticleListViewModel(articles);
+
+            return View(model);
         }
 
         public ActionResult Show(int id = 1)
         {
             var article = Using<GetArticleById>().Execute(id);
 
-            var vm = new ArticleViewModel
+            var model = new ArticleViewModel
                         {
                             Article = article
                         };
 
-            return View(vm);
+            return View(model);
         }
     }
 }

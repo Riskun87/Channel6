@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace Channel6.Domain.Entities
+namespace Channel6.Model
 {
     public class Channel
     {

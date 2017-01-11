@@ -8,11 +8,11 @@ namespace Channel6.WebUI.App_Start
     {
         public void Configuration(IAppBuilder app)
         {
-            app.UseCookieAuthentication(new CookieAuthenticationOptions
+            /*app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = "ApplicationCookie",
                 LoginPath = new PathString("/auth/login")
-            });
+            });*/
         }
     }
 }

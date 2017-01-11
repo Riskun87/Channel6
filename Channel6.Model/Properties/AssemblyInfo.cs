@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Channel6.Domain")]
+[assembly: AssemblyTitle("Channel6.Model")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Channel6.Domain")]
+[assembly: AssemblyProduct("Channel6.Model")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2e8cab74-7b70-4e3d-a4c3-a2d3e88192f9")]
+[assembly: Guid("154dd488-5b9b-4b88-aebf-155c058481b5")]
 
 // Version information for an assembly consists of the following four values:
 //

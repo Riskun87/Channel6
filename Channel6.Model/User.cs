@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.ComponentModel.DataAnnotations;
 
-namespace Channel6.Domain.Entities
+namespace Channel6.Model
 {
     public class User
     {
         [Key]
-        public int Id { get; set; }
+        public int UserId { get; set; }
 
         [Required]
         [DataType(DataType.EmailAddress)]
@@ -19,8 +16,10 @@ namespace Channel6.Domain.Entities
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
+        [StringLength(64)]
         public string Name { get; set; }
 
+        [StringLength(2)]
         public string Country { get; set; }
 
         public UserStatus Status { get; set; }

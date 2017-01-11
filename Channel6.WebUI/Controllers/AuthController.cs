@@ -1,4 +1,4 @@
-﻿using Channel6.Domain.Entities;
+﻿/*using Channel6.Domain.Entities;
 using Channel6.Domain.Concrete;
 using System;
 using System.Collections.Generic;
@@ -118,3 +118,4 @@ namespace Channel6.WebUI.Controllers
         }
     }
 }
+*/

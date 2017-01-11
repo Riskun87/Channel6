@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E8CAB74-7B70-4E3D-A4C3-A2D3E88192F9}</ProjectGuid>
+    <ProjectGuid>{C439F815-F702-4FE7-986E-CB4EFE00B9A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Channel6.Domain</RootNamespace>
-    <AssemblyName>Channel6.Domain</AssemblyName>
+    <RootNamespace>Channel6.Core</RootNamespace>
+    <AssemblyName>Channel6.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,21 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Handlers\GetArticleById.cs" />
-    <Compile Include="Models\ArticleModel.cs" />
+    <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\Channel.cs" />
+    <Compile Include="Models\List.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Channel6.Data\Channel6.Data.csproj">
-      <Project>{5fc4260b-381d-4a4d-9387-f219c61481d5}</Project>
-      <Name>Channel6.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Channel6.Model\Channel6.Model.csproj">
-      <Project>{154dd488-5b9b-4b88-aebf-155c058481b5}</Project>
-      <Name>Channel6.Model</Name>
-    </ProjectReference>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

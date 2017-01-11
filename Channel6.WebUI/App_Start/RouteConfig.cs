@@ -13,6 +13,12 @@ namespace Channel6.WebUI
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            /*routes.MapRoute(
+                name: null,
+                url: "Article{article}",
+                defaults: new { Controller = "Article", action = "Show" }
+            );*/
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

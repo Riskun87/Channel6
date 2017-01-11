@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Channel6.WebUI.App_Start;
+using Channel6.Data.SqlCe;
+using System.Data.Entity;
 
 namespace Channel6.WebUI
 {
@@ -15,6 +17,7 @@ namespace Channel6.WebUI
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            Database.SetInitializer<EFDbContext>(null);
         }
     }
 }

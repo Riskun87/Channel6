@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Channel6.Domain.Entities;
+/*using Channel6.Domain.Entities;
 using Channel6.Domain.Concrete;
 using System.Security.Claims;
 using System.Data.Entity;
@@ -112,3 +112,4 @@ namespace Channel6.WebUI.Controllers
         }
     }
 }
+*/
